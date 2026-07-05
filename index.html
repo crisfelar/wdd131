@@ -7,14 +7,19 @@
     <title>WDD 131 – Dynamic Web Fundamentals – Cristian Felipe Arias</title>
     <meta name="description" content="WDD 131 – Dynamic Web Fundamental - Cristian Felipe Arias - Home Page">
     <meta name="author" content="Cristian Felipe Arias">
-    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
         <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
         <nav>
-            <ul>
+            <ul class="list">
                 <li><a href="https://www.linkedin.com/in/cristian-felipe-arias-leal-0963b12aa/"
                         target="_blank">Linkedin</a></li>
                 <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
@@ -28,16 +33,20 @@
         <h1>Cristian Felipe Arias Leal</h1>
         <section class="card">
             <h3>About Me</h3>
-            <p>I'm Cristian, but most people call me Cris. I was born in Floridablanca, Santander, Colombia. I am
-                currently working for ScotiaBank as a Contact Centre Advisor. I live with my family, my wife and son,
-                and I cannot be more happy than now, neither any other thing can makes me happy as my family do. I love
-                reading about politics, economy, history of the world and my country, and social science.</p>
-            <img src="images/profile.jpg" alt="Me looking to the left" width="200">
-            <div>
-                <h3>Floridablanca, Santander, Colombia.</h3>
-                <img src="images/bandera_de_floridablanca.jpg" alt="Floridablanca's flag" width="200">
-                <a>Official Flag of Floridablanca</a>
-                <p>Floridablanca is a city in Santander, Colombia, near Bucaramanga.
+            <div class="me">
+                <p>I'm Cristian, but most people call me Cris. I was born in Floridablanca, Santander, Colombia. I am
+                    currently working for ScotiaBank as a Contact Centre Advisor. I live with my family, my wife and
+                    son,
+                    and I cannot be more happy than now, neither any other thing can makes me happy as my family do. I
+                    love
+                    reading about politics, economy, history of the world and my country, and social science.</p>
+                <img src="images/profile.jpg" alt="Me looking to the left" width="150">
+            </div>
+            <div class="city">
+                <h4>Floridablanca, Santander, Colombia.</h4>
+                <img src="images/bandera_de_floridablanca.jpg" alt="Floridablanca's flag" width="140">
+                <p class="a">Official Flag of Floridablanca</p>
+                <p class="b">Floridablanca is a city in Santander, Colombia, near Bucaramanga.
                     It is known for its pleasant climate and beautiful landscapes.
                     The city is famous for its delicious traditional obleas.
                     Floridablanca has modern shopping centers, parks, and residential areas.
@@ -56,8 +65,11 @@
         </section>
     </main>
     <footer>
-        <p>&copy;2026 &#10070; Cristian Felipe Arias Leal &#10070; Floridablanca, Santander, Colombia.</p>
-        <span id="currentyear"></span>
+        <p>
+            &copy; <span id="CurrentYear"></span> &#10070; Cristian Felipe Arias Leal &#10070; Floridablanca, Santander,
+            Colombia.
+        </p>
+        <p id="lastModified"></p>
     </footer>
 
 </body>
